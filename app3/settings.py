@@ -23,9 +23,9 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = 'q=z^mg%8gnygm5-y*+lp+#w$iqsh#&7+m=z*)l+a7kxx3g00e-'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
-ALLOWED_HOSTS = [".herokuapp.com"]
+ALLOWED_HOSTS = ["localhost",".herokuapp.com"]
 
 
 # Application definition
@@ -81,6 +81,25 @@ DATABASES = {
     }
 }
 """
+#======Dev
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'd26t4858i6thpr',
+        'USER': 'jardbiqednipfy',
+        'PASSWORD': '39e930f78c45019fec1bea97662ab1e30a433ec8ace41069143dd5c041d56899',
+        'HOST': 'ec2-34-194-14-176.compute-1.amazonaws.com',
+    }
+    ,'dev': {
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': 'web2Dj_3',
+        'USER': 'root',
+        'PASSWORD': '',
+        'HOST': 'localhost',
+    }
+}
+"""
+#======Prod
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
@@ -90,6 +109,7 @@ DATABASES = {
         'HOST': 'localhost',
     }
 }
+"""
 
 
 # Password validation

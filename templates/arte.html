@@ -1,12 +1,18 @@
 
 <h1>Hola arte</h1>
+<p>
+    <a href='/arte/agregar'>agregar</a>
+</p>
 
-
-<ul>
-    {%for a in art %}
-        <li>
-            <a href="arte/{{a.id}}">{{a.nombre}}</a>
-            
-        </li>
-    {%endfor%}
-</ul>
+{%if art %}
+    <ul>
+        {%for a in art %}
+            <li>
+                <a href="arte/{{a.id}}">{{a.nombre}}</a>
+                
+            </li>
+        {%endfor%}
+    </ul>
+{%else%}
+    
+{%endif%}

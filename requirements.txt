@@ -3,7 +3,7 @@ django-appconf==1.0.4
 django-classy-tags==1.0.0
 django-easy-maps==1.1.1
 dnspython==2.1.0
-gunicorn==20.0.4
+gunicorn==20.1.0
 itsdangerous==1.1.0
 Jinja2==2.11.2
 MarkupSafe==1.1.1

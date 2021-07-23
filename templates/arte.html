@@ -1,10 +1,21 @@
 
 <h1>Hola arte</h1>
-<p>
-    <a href='/arte/agregar'>agregar</a>
-</p>
 
-{%if art %}
+
+{%if formularioR %}
+    <form action="" method="POST">
+        {% csrf_token %}
+
+        {{formularioR.as_p}}
+
+        <button>Enviar</button>
+    </form>
+
+{%else%}
+    <p>
+        <a href='/arte/agregar'>agregar</a>
+    </p>
+
     <ul>
         {%for a in art %}
             <li>
@@ -13,6 +24,4 @@
             </li>
         {%endfor%}
     </ul>
-{%else%}
-    
 {%endif%}

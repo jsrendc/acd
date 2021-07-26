@@ -1,4 +1,13 @@
 
-body{
-    background: rgb(255, 255, 255);
+header{
+    background:#000;
+    color:#558dc9;
+    height: 30px;
+}
+
+
+a:link, a:visited{
+    
+    color:#558dc9;
+    
 }

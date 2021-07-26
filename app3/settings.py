@@ -23,7 +23,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = 'q=z^mg%8gnygm5-y*+lp+#w$iqsh#&7+m=z*)l+a7kxx3g00e-'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = ["localhost",".herokuapp.com"]
 
@@ -150,6 +150,7 @@ USE_TZ = False
 
 STATIC_URL = '/static/'
 
+#STATIC_ROOT = os.path.join(BASE_DIR, 'static', 'static')
 
 STATICFILES_DIRS = (os.path.join(BASE_DIR, "static"),)
 
